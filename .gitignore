@@ -1,0 +1,31 @@
+# Ignore Helm package archives
+*.tgz
+
+# Helm build/release output
+/tmpcharts/
+/charts/*.tgz
+
+# Ignore local values files (if you use custom overrides)
+values.override.yaml
+values.local.yaml
+secrets.yaml
+*.secret.yaml
+
+# Kubernetes config or sensitive files
+kubeconfig
+*.crt
+*.key
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
