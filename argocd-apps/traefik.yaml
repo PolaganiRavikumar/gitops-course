@@ -6,12 +6,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://gitlab.com/Ravikumar98/gitops-course.git
+    repoURL: https://github.com/PolaganiRavikumar/gitops-course.git
     targetRevision: main
-    path: charts/cert-manager
+    path: charts/traefik
     helm:
       valueFiles:
-        - ../../overrides/cert-manager.yaml
+        - ../../overrides/traefik.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: traefik
